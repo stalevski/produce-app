@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  background:
+    radial-gradient(1200px 600px at 90% -10%, #fde9c9 0%, transparent 60%),
+    radial-gradient(900px 500px at -10% 10%, #d9ead0 0%, transparent 55%),
+    #fbf7f0;
+  color: #1b1f1a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .font-display {
+    font-family: "Fraunces", ui-serif, Georgia, serif;
+    font-optical-sizing: auto;
+  }
+}
